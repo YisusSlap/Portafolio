@@ -1,0 +1,124 @@
+---
+title: "Introducción a Git y GitHub 🐙"
+date: "2024-07-11"
+description: "Guía básica para usar Git en el control de versiones y GitHub para colaborar en proyectos."
+---
+
+# Introducción a Git y GitHub 🐙
+
+¡Hola, futuros maestros del código! 👩‍💻👨‍💻 En esta entrada, vamos a sumergirnos en el fascinante mundo de Git y GitHub. Si alguna vez has trabajado en un proyecto y has perdido el control de las versiones, o si quieres colaborar con otros programadores sin volverte loco, este post es para ti. ¡Vamos allá!
+
+## ¿Qué es Git?
+
+Git es un sistema de control de versiones. ¿Y eso qué significa? Básicamente, es una herramienta que te permite llevar un registro de todos los cambios que haces en tu código. Imagina que estás escribiendo un libro y quieres guardar cada versión diferente de un capítulo. Git hace eso, pero para tu código. 📝
+
+## Instalando Git
+
+Primero, necesitas instalar Git en tu ordenador. Aquí te dejo los enlaces para que lo descargues:
+
+- [Git para Windows](https://gitforwindows.org/)
+- [Git para macOS](https://sourceforge.net/projects/git-osx-installer/)
+- [Git para Linux](https://git-scm.com/download/linux)
+
+Una vez instalado, abre tu terminal y verifica que todo está bien con este comando:
+
+```sh
+git --version
+```
+
+## Primeros Pasos con Git
+
+Ahora que tienes Git instalado, vamos a configurarlo:
+
+```sh
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+```
+
+Estas configuraciones son importantes porque cada vez que hagas un cambio, Git sabrá quién lo hizo.
+
+## Creando tu Primer Repositorio
+
+Un repositorio es como una carpeta mágica que Git controla. Vamos a crear uno:
+
+```sh
+mkdir mi-primer-repo
+cd mi-primer-repo
+git init
+```
+
+¡Listo! Ya tienes tu primer repositorio Git. 🎉
+
+## Añadiendo y Confirmando Cambios
+
+Crea un archivo en tu repositorio, por ejemplo *index.html*. Luego, vamos a decirle a Git que lo añada al control de versiones:
+
+```sh
+git add index.html
+```
+
+Ahora, vamos a confirmar los cambios:
+
+```sh
+git commit -m "Añade el archivo index.html"
+```
+
+¡Genial! Acabas de hacer tu primer commit. Piensa en los commits como instantáneas de tu proyecto en diferentes momentos del tiempo.
+
+## ¿Qué es GitHub?
+
+GitHub es una plataforma que te permite alojar tus repositorios Git en la nube. Además, facilita la colaboración con otros programadores. Es como un Facebook para tu código. 🌐
+
+## Creando una Cuenta en GitHub
+
+Primero, ve a [GitHub](https://github.com/) y crea una cuenta si aún no tienes una. Una vez que tengas tu cuenta, vamos a conectar tu repositorio local con GitHub.
+
+## Subiendo tu Repositorio a GitHub
+
+Crea un nuevo repositorio en GitHub. No necesitas añadir ningún archivo, solo crea el repositorio vacío. Luego, sigue estos pasos en tu terminal:
+
+```sh
+git remote add origin https://github.com/tuusuario/mi-primer-repo.git
+git branch -M main
+git push -u origin main
+```
+
+¡Y listo! Tu código ahora está en GitHub.
+
+## Trabajando con Ramas
+
+Las ramas (branches) en Git te permiten trabajar en diferentes versiones de tu proyecto simultáneamente. La rama principal suele llamarse *main*, pero puedes crear otras ramas para trabajar en nuevas características sin afectar la principal.
+
+```sh
+git checkout -b nueva-rama
+```
+
+Cuando termines de trabajar en tu nueva rama y quieras unir los cambios con la principal, haces un merge:
+
+```sh
+git checkout main
+git merge nueva-rama
+```
+
+## Colaborando con Otros
+
+Una de las mejores cosas de GitHub es la colaboración. Puedes invitar a otros a trabajar en tu proyecto o puedes contribuir a proyectos de otras personas.
+
+- **Forks**: Copia el repositorio de otra persona a tu cuenta para hacer cambios sin afectar el original.
+- **Pull Requests**: Propuesta de cambios que haces a un proyecto. Los dueños del proyecto pueden revisar tus cambios y decidir si los aceptan.
+
+## Mantén Tu Proyecto Actualizado
+
+Cuando trabajas con otros, es importante mantener tu copia del repositorio actualizada:
+
+```sh
+git pull origin main
+```
+
+## ¡A Practicar!
+
+Y eso es todo por hoy. Git y GitHub son herramientas poderosísimas que te facilitarán la vida como programador. No te preocupes si te sientes abrumado al principio; como todo en la programación, la práctica te hará mejorar. ¡Nos vemos en el próximo post! 🚀
+
+---
+
+¿Tienes alguna duda o comentario? ¡Déjalo aquí abajo y con gusto te ayudaré!

@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ListCard from "@/components/ListCard";
 import Head from "next/head";
 import styles from "@/styles/Blog.module.css";
 import { getAllFilesMetadata } from "@/lib/mdx";
 import { Montserrat } from "next/font/google";
-import { ListItem, List, ListItemButton } from "@mui/material";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -19,25 +19,22 @@ export default function Blog({ posts = [] }) {
       <Header />
       <main className={`${styles.main} ${montserrat.className}`}>
         <h1>Últimas Publicaciones</h1>
-        <List>
-          {posts.length > 0 ? (
-            posts.map((post) => (
-              <ListItem key={post.slug}>
-                <ListItemButton alignItems="center" href={`/${post.slug}`}>
-                  <div>
-                    <h2>{post.title}</h2>
-                    <p>{post.description}</p>
-                    <p>
-                      <span className={styles.resaltar}>{post.date}</span>
-                    </p>
-                  </div>
-                </ListItemButton>
-              </ListItem>
-            ))
-          ) : (
-            <p>No hay publicaciones disponibles</p>
-          )}
-        </List>
+        <p>Aqui podras algunos apuntes o ayudas que he obtenido durante mis estudios en la carrera. Los cuales fueron escritos en archivos .mdx y han sido adaptados a paginas web.</p>
+        <div>
+      {posts.length > 0 ? (
+        posts.map((post) => (
+          <ListCard
+            key={post.slug}  // Usa el slug como key para garantizar unicidad
+            title={post.title}
+            description={post.description}
+            date={post.date}
+            slug={post.slug}
+          />
+        ))
+      ) : (
+        <p>No hay publicaciones disponibles</p>
+      )}
+    </div>
       </main>
       <Footer />
     </>

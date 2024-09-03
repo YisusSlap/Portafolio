@@ -10,6 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {ThemeProvider} from "@mui/material/styles";
 import theme from "@/lib/theme.js"
+import Card from '@/components/Card';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -82,54 +83,30 @@ export default function Home() {
         <div className={styles.proyectos}>
           <h3>Proyectos Destacables</h3>
           <div className={styles.cards}>
-            <div className={styles.card}>
-              <Image
-                className={styles.imagen}
-                width={340}
-                height={180}
-                priority={true}
-                src="/Card-Image.webp" 
-                alt="Telefonos mostrando la aplicacion"
-              />
-              <strong>Postal Cumpleaños</strong>
-              <p>Hola</p>
-            </div>
-            <div className={styles.card}>
-              <Image
-                className={styles.imagen}
-                width={340}
-                height={180}
-                priority={true}
-                src="/Card-Image.webp" 
-                alt="Telefonos mostrando la aplicacion"
-              />
-              <strong>Acortador URL</strong>
-              <p>Hola</p>
-            </div>
-            <div className={styles.card}>
-              <Image
-                className={styles.imagen}
-                width={340}
-                height={180}
-                priority={true}
-                src="/Card-Image.webp" 
-                alt="Telefonos mostrando la aplicacion"
-              />
-              <strong>Postal Cumpleaños</strong>
-              <p>Hola</p>
-            </div>
-            <div className={styles.card}>
-              <Image
-                className={styles.imagen}
-                width={340}
-                height={180}
-                priority={true}
-                src="/Card-Image.webp" 
-                alt="Telefonos mostrando la aplicacion"
-              />
-              <strong>Acortador URL</strong>
-              <p>Hola</p>
-            </div>
+            <Card
+              imageSrc="/Card-Image.webp"
+              imageAlt="Teléfonos mostrando la aplicación"
+              title="Postal Cumpleaños"
+              description="Creador de una tarjeta de cumpleaños digital la cual acepta que usuarios puedan acceder para dejar su felicitación a la persona a quien va dirigida."
+            />
+            <Card
+              imageSrc="/Card-Image.webp"
+              imageAlt="Teléfonos mostrando la aplicación"
+              title="Acortador URL"
+              description="Sistema de acortador de links usando solo javascript."
+            />
+            <Card
+              imageSrc="/Card-Image.webp"
+              imageAlt="Teléfonos mostrando la aplicación"
+              title="Sistemas de Pedidos Personalizado"
+              description="Sistema de gestion de pedidos con aplicacion movil y web para cafeteria autonoma"
+            />
+            <Card
+              imageSrc="/Card-Image.webp"
+              imageAlt="Teléfonos mostrando la aplicación"
+              title="Postal Cumpleaños"
+              description="Creador de una tarjeta de cumpleaños digital la cual acepta que usuarios puedan acceder para dejar su felicitación a la persona a quien va dirigida."
+            />
           </div>
         </div>
       </main>

@@ -1,0 +1,23 @@
+.card {
+    background-color: #fffffe;
+    width: 340px;
+    border-radius: 15px;
+  }
+  
+  .card p,
+  .card strong {
+    color: #232946;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+  
+.text {
+  padding: 1rem;
+}
+  .imagen {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    mask-image: linear-gradient(#fffffe, transparent);
+  }
+  

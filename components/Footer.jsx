@@ -9,7 +9,7 @@ const Footer = () =>{
         <>
             <footer className={`${styles.footer} ${karla.className}`}>
                 <div className={styles.footerCredits}>
-                    <p>&copy; 2024 Jesus Callejas. Todos los derechos reservados.</p>
+                    <p>&copy; 2024 Callejas Rivera José de Jesús.</p>
                 </div>
             </footer>
         </>

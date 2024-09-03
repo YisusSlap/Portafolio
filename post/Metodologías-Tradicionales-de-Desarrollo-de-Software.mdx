@@ -1,0 +1,98 @@
+---
+title: "Metodologías Tradicionales de Desarrollo de Software 🎓"
+date: "2024-08-22"
+description: "Descripción y análisis de las metodologías tradicionales de desarrollo de software, incluyendo Cascada, Prototipos, Espiral, Win-Win, Basado en Componentes y Concurrente."
+---
+# Metodologías Tradicionales o Prescriptivas
+
+### Cascada
+El modelo de proceso de desarrollo de software más antiguo publicado (Royce, 1970). Se conoce como ciclo de vida del software.
+
+#### Críticas:
+- Los proyectos reales rara vez se ajustan perfectamente al modelo.
+- Es común que el cliente no exponga todos los requerimientos desde el inicio.
+- El producto operativo solo se entrega al final del proceso.
+
+#### Consejo:
+- Útil para proyectos donde los requisitos están bien definidos desde el principio y no se espera que cambien.
+
+### Prototipos
+Es un modelo a escala que representa cómo podría ser el producto final, pero no es equivalente a este. Iniciado por la psicóloga Eleanor Rosch y más tarde adoptado por Hasan Gomaa (1984).
+
+#### Lineamientos del desarrollo:
+- Trabajar en módulos manejables.
+- Construir el prototipo rápidamente.
+- Involucrar al cliente en la evaluación temprana y continua del prototipo.
+
+#### Ventajas:
+- Permite identificar la viabilidad del sistema en etapas tempranas.
+- Facilita la incorporación de cambios en las primeras etapas del desarrollo.
+
+#### Desventajas:
+- Posible modificación constante del prototipo, lo que puede alterar funcionalidades o características.
+- El cliente puede confundir el prototipo con el sistema final.
+- Riesgo de familiarizarse con decisiones iniciales equivocadas.
+
+#### Consejo:
+- Útil cuando los requerimientos no están claramente definidos desde el inicio.
+- Es esencial establecer de antemano las expectativas y las reglas del juego con el cliente.
+
+### Modelo Evolutivo
+Se adapta más fácilmente a los cambios introducidos a lo largo del desarrollo. Es iterativo, y en cada iteración se obtiene una versión más completa del software. Algunos modelos evolutivos son el espiral y el Win-Win.
+
+### Espiral
+Propuesto por Barry Boehm en 1986. Tiene un enfoque cíclico donde cada ciclo representa una fase del proceso de desarrollo de software. Es útil para proyectos grandes y permite el uso de prototipos.
+
+#### Críticas:
+- Es difícil convencer a los clientes de que es un modelo controlable.
+- Requiere habilidades avanzadas para el análisis de riesgos.
+
+#### Etapas:
+1. **Planeación:** Determinación de objetivos, alternativas y restricciones.
+2. **Análisis de riesgos:** Identificación y mitigación de riesgos.
+3. **Ingeniería:** Desarrollo y verificación del producto.
+4. **Evaluación:** Valoración por parte del cliente de los resultados obtenidos.
+
+#### Ventajas:
+- Combina los mejores elementos de otros modelos.
+- Reduce significativamente los riesgos del proyecto.
+
+#### Desventajas:
+- Puede aumentar el tiempo de desarrollo.
+- Genera costos elevados.
+
+### Win-Win
+Desarrollado por Barry Boehm en 1988, basado en la teoría de Administración de Sistemas. Inicia con una negociación en cada fase del modelo espiral.
+
+#### Fases:
+1. Identificación de los actores del sistema.
+2. Determinación de las condiciones de "ganar" para cada parte interesada.
+3. Negociaciones para asegurar un acuerdo que beneficie a todas las partes.
+
+#### Ventajas:
+- Acelera la producción de software.
+- Establece claramente los objetivos del proyecto.
+
+#### Desventajas:
+- Requiere una alta habilidad de negociación y manejo de conflictos.
+
+### Basado en Componentes
+Este modelo está muy relacionado con la programación orientada a objetos. Iniciado por Garnisch en Alemania (1968) con su discurso titulado "Mass Produced Software Component".
+
+#### Ventajas:
+- El código de las clases es reutilizable dentro del mismo software que se va creando.
+- Acelera la creación de software (entre un 70% y 80% más rápido).
+- Simplifica las pruebas al realizarlas por componentes, asegurando un producto final de calidad.
+
+#### Desventajas:
+- Depende en gran medida de haber creado una biblioteca de clases bien diseñada.
+
+### Concurrente
+Atribuido a Davis Sitaram, también conocido como Ingeniería Concurrente. Este modelo es aplicable a todo tipo de desarrollo de software. Cada actividad, acción o tarea puede ocurrir simultáneamente con otras.
+
+#### Ventajas:
+- Recomendado para proyectos con grupos de trabajo independientes.
+- Proporciona una imagen precisa del estado actual del proyecto.
+
+#### Desventajas:
+- No es viable si no existen grupos de trabajo independientes.

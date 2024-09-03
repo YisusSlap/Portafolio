@@ -11,7 +11,7 @@ const Header = () =>{
                 <nav>
                     <a className={styles.headerbutton} href="/">Inicio</a>
                     <a className={styles.headerbutton} href="/sobre-mi">Sobre mi</a>
-                    <a className={styles.headerbutton} href="/blog">Blog</a>
+                    <a className={styles.headerbutton} href="/blog">Apuntes</a>
                     <a className={styles.headerbutton} href="/proyectos">Proyectos</a>
                 </nav>
             </header>

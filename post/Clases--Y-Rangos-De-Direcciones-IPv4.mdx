@@ -1,0 +1,49 @@
+---
+title: "Clases y Rangos de Direcciones IPv4 🌐"
+date: "2024-08-23"
+description: "Descripción de las clases de direcciones IPv4, sus rangos, y sus aplicaciones comunes."
+---
+
+# Las Clases en las Direcciones IPv4
+
+El Protocolo de Internet versión 4 (IPv4) utiliza un sistema de direccionamiento que permite identificar dispositivos en una red. Las direcciones IPv4 están divididas en cinco clases (A, B, C, D y E), donde cada una tiene un rango específico de direcciones IP y características particulares.
+
+### Descripción de Clases
+
+#### Clase A
+- **Rango:** 0.0.0.0 - 127.255.255.255
+- **Propósito:** Redes grandes con un número elevado de hosts.
+- **Direcciones privadas:** 10.0.0.0 - 10.255.255.255
+- **Uso común:** Redes corporativas o gubernamentales de gran tamaño.
+
+#### Clase B
+- **Rango:** 128.0.0.0 - 191.255.255.255
+- **Propósito:** Redes de tamaño mediano, como las de universidades u organizaciones grandes.
+- **Direcciones privadas:** 172.16.0.0 - 172.31.255.255
+- **Uso común:** Infraestructuras de tamaño mediano con un equilibrio entre el número de redes y hosts.
+
+#### Clase C
+- **Rango:** 192.0.0.0 - 223.255.255.255
+- **Propósito:** Redes pequeñas, como las de oficinas o grupos de trabajo.
+- **Direcciones privadas:** 192.168.0.0 - 192.168.255.255
+- **Uso común:** Hogares, pequeñas y medianas empresas (PyMEs).
+
+#### Clase D
+- **Rango:** 224.0.0.0 - 239.255.255.255
+- **Propósito:** Multidifusión (multicast), que permite que un solo paquete de datos se envíe a múltiples destinos.
+- **Direcciones privadas:** No aplica
+- **Uso común:** Streaming de video en vivo, videoconferencias, y distribución de información a grupos.
+
+#### Clase E
+- **Rango:** 240.0.0.0 - 255.255.255.255
+- **Propósito:** Reservada para experimentación y futuros usos.
+- **Direcciones privadas:** No aplica
+- **Uso común:** Investigaciones y pruebas dentro de entornos controlados.
+
+| Clase | Rango de Direcciones           | Direcciones Privadas            | Número de Redes | Número de Hosts por Red |
+|-------|--------------------------------|---------------------------------|----------------|-------------------------|
+| A     | 0.0.0.0 - 127.255.255.255      | 10.0.0.0 - 10.255.255.255       | 128            | 16,777,214               |
+| B     | 128.0.0.0 - 191.255.255.255    | 172.16.0.0 - 172.31.255.255     | 16,384         | 65,534                   |
+| C     | 192.0.0.0 - 223.255.255.255    | 192.168.0.0 - 192.168.255.255   | 2,097,152      | 254                      |
+| D     | 224.0.0.0 - 239.255.255.255    | No aplica                      | No aplica      | No aplica                |
+| E     | 240.0.0.0 - 255.255.255.255    | No aplica                      | No aplica      | No aplica                |
